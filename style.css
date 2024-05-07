@@ -1,0 +1,227 @@
+:root{
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Red Hat Display", sans-serif;
+    text-decoration: none;
+}
+
+html,body{
+    height: 100%;
+}
+
+
+body{
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var(--Paleblue);
+    display: grid;
+    place-items: center;
+}
+
+
+
+.SummaryBox{
+    width: 440px;
+    height: 683.656px;
+    background-color: #ffff;
+    border-radius: 20px;
+    position: relative;
+}
+
+.img{
+    width: 100%;
+    height: 215.109px;
+}
+
+.img img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.text1{
+    width: 100%;
+    height: 101.266px;
+    margin-top: 55px;
+    margin-bottom: 16%;
+    
+    
+}
+
+.text1 h1{
+    font-size: 27.2px;
+    font-weight: 900;
+    text-align: center;
+    margin-bottom: 32px;
+    color: var(--Darkblue);
+}
+
+
+.text1 p{
+    padding: 0px 48px 32px 48px;
+    line-height: 26.88px;
+    font-size: 16.8px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--Desaturatedblue);
+    margin-bottom: 27px;
+}
+
+.plan{
+    display: flex;
+    width: 344px;
+    height: 96px;
+    background-color: var(--Verypaleblue);
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.planbox1{
+    position: absolute;
+    left: 17%;
+}
+
+.planbox2 {
+    margin-right: 22%;
+}
+
+.planbox2 h2{
+    display: inline-block;
+    margin-bottom: 8px;
+    color: var(--Darkblue);
+    font-size: 16.8px;
+
+}
+
+.planbox2 p{
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--Desaturatedblue);
+}
+
+.planbox3{
+   position: absolute;
+   right: 17%;
+}
+
+.planbox3 a{
+    font-size: 14.4px;
+    text-decoration: underline;
+    font-weight: 700;
+    color: var(--Brightblue);
+}
+
+.button{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button .btn1{
+    border: none;
+    margin-bottom: 10px;
+    width: 318.438px;
+    /* height: 20px; */
+    padding: 15px;
+    background-color: var(--Brightblue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .95rem;
+    font-weight: 700;
+    color: #ffff;
+    border-radius: 10px;
+    box-shadow: 0 15px 20px 0 hsla(245, 75%, 52%, .25);
+    transition: all .2s ease;
+    outline: none;
+}
+
+.button .btn1:hover{
+    opacity: .8;
+}
+
+
+.button .btn2{
+    border: none;
+    margin-bottom: 10px;
+    background-color: inherit;
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16.2px;
+    font-weight: 700;
+    color: var(--Desaturatedblue);
+    border-radius: 10px;
+    outline: none;
+    transition: all .2s ease;
+}
+
+.button .btn2:hover{
+    color: var(--Darkblue);
+}
+
+
+@media (min-width: 450px){
+    body{
+        background: url(images/pattern-background-desktop.svg),var(--Paleblue);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-attachment: fixed;
+        overflow: hidden;
+    }
+
+    .SummaryBox{
+        width: 390px;
+    }
+    
+  .title{
+    font-size: 1.7rem;
+    margin-top: 1.7em;
+    margin-bottom: .7em;
+  }
+
+  .text{
+    font-size: 1.05rem;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+
+  .plan{
+    margin: 0 3em 2em 3em;
+    padding: 1.5em;
+  }
+
+  .planbox2 h2 {
+    font-size: 1.05rem;
+  }
+
+  .planbox2 p {
+    font-size: 1.05rem;
+  }
+
+  .planbox3 a {
+    font-size: .9rem;
+  }
+
+  .btn {
+    margin-left: 3em;
+    margin-right: 3em;
+  }
+
+}
